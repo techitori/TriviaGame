@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trivia Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="#">MATH MAYHEM</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#timetitle">TIME REMAINING:</a></li>
+        <li><a id="timerem">1:00</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<div class="jumbotron">
+	<h1><img src="assets/images/math.png"> MATH MAYHEM</h1>
+</div>
+
+<!-- Quiz Questions -->
+<div id="algebra1" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3>How many can you answer in 1 minute?</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-hover">
+
+              <p class="question">1. What is the last digit of 123 x 321?</p>
+
+              <ul class="answers">
+              <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">1</label><br/>
+              <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">2</label><br/>
+              <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">3</label><br/>
+              <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">4</label><br/>
+              </ul>
+
+
+              <p class="question">2. If f(x) = x<sup>2</sup> + x + 1, what does f '(x) equal?</p>
+
+              <ul class="answers">
+              <input type="radio" name="q2" value="a" id="q2a"><label for="q2a">1</label><br/>
+              <input type="radio" name="q2" value="b" id="q2b"><label for="q2b">2</label><br/>
+              <input type="radio" name="q2" value="c" id="q2c"><label for="q2c">3</label><br/>
+              <input type="radio" name="q2" value="d" id="q2d"><label for="q2d">4</label><br/>
+              </ul>
+
+              <p class="question">3. Which one of these numbers are composite?</p>
+
+              <ul class="answers">
+              <input type="radio" name="q3" value="a" id="q3a"><label for="q3a">1</label><br/>
+              <input type="radio" name="q3" value="b" id="q3b"><label for="q3b">2</label><br/>
+              <input type="radio" name="q3" value="c" id="q3c"><label for="q3c">3</label><br/>
+              <input type="radio" name="q3" value="d" id="q3d"><label for="q3d">4</label><br/>
+              </ul>
+
+              <p class="question">4. What is 9<sup>1/2</sup> / <sqrt>9</sqrt>?</p>
+
+              <ul class="answers">
+              <input type="radio" name="q4" value="a" id="q4a"><label for="q4a">1</label><br/>
+              <input type="radio" name="q4" value="b" id="q4b"><label for="q4b">2</label><br/>
+              <input type="radio" name="q4" value="c" id="q4c"><label for="q4c">3</label><br/>
+              <input type="radio" name="q4" value="d" id="q4d"><label for="q4d">4</label><br/>
+              </ul>
+
+              <p class="question">5. What is the least common factor of 24 and 36?</p>
+
+              <ul class="answers">
+              <input type="radio" name="q5" value="a" id="q5a"><label for="q5a">1</label><br/>
+              <input type="radio" name="q5" value="b" id="q5b"><label for="q5b">2</label><br/>
+              <input type="radio" name="q5" value="c" id="q5c"><label for="q5c">3</label><br/>
+              <input type="radio" name="q5" value="d" id="q5d"><label for="q5d">4</label><br/>
+              </ul>
+
+              <p class="question">6. What is the square root of 16?</p>
+
+              <ul class="answers">
+              <input type="radio" name="q6" value="a" id="q6a"><label for="q6a">1</label><br/>
+              <input type="radio" name="q6" value="b" id="q6b"><label for="q6b">2</label><br/>
+              <input type="radio" name="q6" value="c" id="q6c"><label for="q6c">3</label><br/>
+              <input type="radio" name="q6" value="d" id="q6d"><label for="q6d">4</label><br/>
+              </ul>
+
+              <p class="question">7. What is 333<sup>0</sup>?</p>
+
+              <ul class="answers">
+              <input type="radio" name="q7" value="a" id="q7a"><label for="q7a">1</label><br/>
+              <input type="radio" name="q7" value="b" id="q7b"><label for="q7b">2</label><br/>
+              <input type="radio" name="q7" value="c" id="q7c"><label for="q7c">3</label><br/>
+              <input type="radio" name="q7" value="d" id="q7d"><label for="q7d">4</label><br/>
+              </ul>
+
+              <p class="question">8. How many zeros are in 10<sup>4</sup>?</p>
+
+              <ul class="answers">
+              <input type="radio" name="q8" value="a" id="q8a"><label for="q8a">1</label><br/>
+              <input type="radio" name="q8" value="b" id="q8b"><label for="q8b">2</label><br/>
+              <input type="radio" name="q8" value="c" id="q8c"><label for="q8c">3</label><br/>
+              <input type="radio" name="q8" value="d" id="q8d"><label for="q8d">4</label><br/>
+              </ul>
+
+              <p class="question">9. What is 1908 - 1906 + (1960 - 1959)?</p>
+
+              <ul class="answers">
+              <input type="radio" name="q9" value="a" id="q9a"><label for="q9a">1</label><br/>
+              <input type="radio" name="q9" value="b" id="q9b"><label for="q9b">2</label><br/>
+              <input type="radio" name="q9" value="c" id="q9c"><label for="q9c">3</label><br/>
+              <input type="radio" name="q9" value="d" id="q9d"><label for="q9d">4</label><br/>
+              </ul>
+
+              <p class="question">10. What is the greatest common factor of the answer choices?</p>
+
+              <ul class="answers">
+              <input type="radio" name="q10" value="a" id="q10a"><label for="q10a">1</label><br/>
+              <input type="radio" name="q10" value="b" id="q10b"><label for="q10b">2</label><br/>
+              <input type="radio" name="q10" value="c" id="q10c"><label for="q10c">3</label><br/>
+              <input type="radio" name="q10" value="d" id="q10d"><label for="q10d">4</label><br/>
+              </ul>
+
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<br/>
+<div id="results">
+Show me the answers!
+</div>
+
+<div id="category1">
+<p>
+<strong>Question 1:</strong> The correct answer is the <strong>1</strong>.</p>
+</div>
+
+<div id="category2">
+<p>
+<strong>Question 2:</strong> The correct answer is <strong>2</strong>.</p>
+</div>
+
+<div id="category3">
+<p>
+<strong>Question 3:</strong> The correct answer is <strong>3</strong>.</p>
+</div>
+
+<div id="category4">
+<p>
+<strong>Question 4:</strong> The correct answer is <strong>4</strong>.</p>
+</div>
+
+<div id="category5">
+<p>
+<strong>Question 5:</strong> The correct answer is <strong>1</strong>.</p>
+</div>
+
+<div id="category6">
+<p>
+<strong>Question 6:</strong> The correct answer is <strong>2</strong>.</p>
+</div>
+
+<div id="category7">
+<p>
+<strong>Question 7:</strong> The correct answer is <strong>3</strong>.</p>
+</div>
+
+<div id="category8">
+<p>
+<strong>Question 8:</strong> The correct answer is <strong>4</strong>.</p>
+</div>
+
+<div id="category9">
+<p>
+<strong>Question 9:</strong> The correct answer is <strong>1</strong>.</p>
+</div>
+
+<div id="category10">
+<p>
+<strong>Question 10:</strong> The correct answer is <strong>2</strong>.</p>
+</div>
+
+<div id="category11">
+<p>
+You answered them all right!</p>
+</div>
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+<!-- Script -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
