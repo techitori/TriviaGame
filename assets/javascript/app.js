@@ -1,4 +1,4 @@
-// CLICK EVENTS
+// Click events to initiate function
 $(document).on("click", "#start", function() {
   game.start();
 });
@@ -8,30 +8,32 @@ $(document).on("click", "#done", function() {
   game.done();
 });
 
+//Initialize variable for counting interval of 1 sec
+var count;
 
-var timer;
-
+//Initialize game variables and functions
 var game = {
 
   correct: 0,
   incorrect: 0,
-  counter: 60,
+  seconds: 60,
 
+  //function that carries out timer decrement
   countdown: function() {
-    game.counter--;
-    $("#counter-number").html(game.counter);
-    if (game.counter === 0) {
-      console.log("TIME UP");
+    game.seconds--;
+    $("#seconds-number").html(game.seconds);
+    if (game.seconds === 0) {
+      //when time is up, run done function
       game.done();
     }
   },
-
+  //starts countdown when start button pressed
   start: function() {
-    timer = setInterval(game.countdown, 1000);
+    count = setInterval(game.countdown, 1000);
   },
-
+  //Initializes when time runs out or done button is pressed. Checks answers and iterates needed points
   done: function() {
-
+    //checks user selection with given correct answer
     $.each($("input[name='q1']:checked"), function() {
       if ($(this).val() == "c") {
         game.correct++;
@@ -121,17 +123,19 @@ var game = {
         game.incorrect++;
       }
     });
-
+  //Initializes result function
   this.result();
 
 },
 
   result: function() {
-
-    clearInterval(timer);
-
+    //stop decrement
+    clearInterval(count);
+    //clear questions
     $("#questions").empty();
-
+    //prevent user from re-initializing start
+    $(".navbar").empty();
+    //Print all done message
     $("#questions").html("<h2>All Done!</h2>");
     $("#questions").append("<h3>Correct Answers: " + this.correct + "</h3>");
     $("#questions").append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
