@@ -1,3 +1,9 @@
+//hide questions befroe game starts
+$(document).ready(function(){
+  $(".panel-body").hide();
+});
+
+
 // Click events to initiate function
 $(document).on("click", "#start", function() {
   game.start();
@@ -30,6 +36,10 @@ var game = {
   //starts countdown when start button pressed
   start: function() {
     count = setInterval(game.countdown, 1000);
+    //show questions
+    $(document).ready(function(){
+      $(".panel-body").show();
+    });
   },
   //Initializes when time runs out or done button is pressed. Checks answers and iterates needed points
   done: function() {
